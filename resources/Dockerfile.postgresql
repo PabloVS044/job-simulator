@@ -1,0 +1,9 @@
+FROM postgres:16-alpine
+
+ENV POSTGRES_DB=jobsimulator
+ENV POSTGRES_USER=user
+ENV POSTGRES_PASSWORD=password
+
+COPY init.sql /docker-entrypoint-initdb.d/
+
+EXPOSE 5432

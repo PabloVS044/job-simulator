@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Simulator — Ver registro</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen">
+
+  <header class="bg-slate-900 border-b border-slate-800 px-8 py-4">
+    <div class="flex items-center gap-3 max-w-3xl mx-auto">
+      <a href="index.html" class="text-slate-500 hover:text-slate-300 transition-colors text-sm">← Volver</a>
+      <span class="text-slate-700">/</span>
+      <span class="text-indigo-500 font-bold tracking-tight">Job Simulator</span>
+      <span class="text-slate-700">/</span>
+      <span class="text-slate-400 text-sm uppercase tracking-widest" id="resource-label"></span>
+    </div>
+  </header>
+
+  <main class="max-w-3xl mx-auto px-8 py-10">
+    <div id="error" class="hidden mb-6 bg-red-950 border border-red-800 text-red-400 px-4 py-3 rounded-lg text-sm"></div>
+
+    <div id="card" class="bg-slate-900 border border-slate-800 rounded-xl p-8 min-h-48">
+      <div class="animate-pulse space-y-5">
+        <div class="h-3 bg-slate-800 rounded w-16"></div>
+        <div class="h-6 bg-slate-800 rounded w-48"></div>
+        <div class="grid grid-cols-2 gap-6 mt-8">
+          <div class="h-4 bg-slate-800 rounded"></div>
+          <div class="h-4 bg-slate-800 rounded"></div>
+          <div class="h-4 bg-slate-800 rounded"></div>
+          <div class="h-4 bg-slate-800 rounded"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex gap-3 mt-6">
+      <a id="edit-link" href="#" class="bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-medium px-5 py-2.5 rounded-lg transition-colors">
+        Editar
+      </a>
+    </div>
+  </main>
+
+  <script src="js/config.js"></script>
+  <script type="module" src="js/show.js"></script>
+</body>
+</html>
